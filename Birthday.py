@@ -14,7 +14,7 @@ inputAge = input("How old are you? ")
 birthYear = today.year - int(inputAge)
 
 
-if (int(inputMonth) == today.month):
+if (int(inputMonth) == today.month and int(inputDay) == today.day):
     print("")
     print("Happy birthday %s! You are %s years old." % (inputName.capitalize(), inputAge))
 
@@ -53,7 +53,7 @@ elif((int(inputMonth) == 12 and int(inputDay) >= 22 and int(inputDay) <= 31 or (
     print("%s is a Capricorn." % inputName.capitalize())
 
 elif((int(inputMonth) == 1 and int(inputDay) >= 20 and int(inputDay) <= 31) or (int(inputMonth) == 2 and int(inputDay) >= 1 and int(inputDay) <= 18)):
-    print("%s is a Aquarius." % inputName.capitalize())
+    print("%s is an Aquarius." % inputName.capitalize())
 
 elif((int(inputMonth) == 2 and int(inputDay) >= 19 and int(inputDay) <= 31) or (int(inputMonth) == 3 and int(inputDay) >= 1 and int(inputDay) <= 20)):
     print("%s is a Pisces." % inputName.capitalize())
